@@ -1,6 +1,6 @@
 extends Node2D
 
-const PIPES = preload("res://pipes/pipes.tscn")
+const PIPES = preload("res://scenes/pipes/pipes.tscn")
 
 @onready var spawn_high: Marker2D = $SpawnHigh
 @onready var spawn_low: Marker2D = $SpawnLow
