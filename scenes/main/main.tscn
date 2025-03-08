@@ -1,0 +1,72 @@
+[gd_scene load_steps=5 format=3 uid="uid://xmvcjghga4v2"]
+
+[ext_resource type="Texture2D" uid="uid://j71ajggyisid" path="res://assets/background/sky.png" id="1_hyk8p"]
+[ext_resource type="LabelSettings" uid="uid://bqkyenn2mdrpx" path="res://assets/fonts/LG_red_72.tres" id="2_l3cfh"]
+[ext_resource type="LabelSettings" uid="uid://6uenx2po8yfm" path="res://assets/fonts/LG_green_44.tres" id="3_6q06x"]
+[ext_resource type="LabelSettings" uid="uid://dn0wxtgsi4hd8" path="res://assets/fonts/LG_red_24.tres" id="4_ow5a4"]
+
+[node name="Main" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Background" type="TextureRect" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("1_hyk8p")
+expand_mode = 1
+
+[node name="MarginContainer" type="MarginContainer" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/margin_left = 24
+theme_override_constants/margin_top = 24
+theme_override_constants/margin_right = 24
+theme_override_constants/margin_bottom = 24
+
+[node name="TitleLabel" type="Label" parent="MarginContainer"]
+layout_mode = 2
+size_flags_vertical = 0
+text = "TAPPY
+PLANE"
+label_settings = ExtResource("2_l3cfh")
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="SpaceLabel" type="Label" parent="MarginContainer"]
+layout_mode = 2
+text = "PRESS SPACE
+TO
+PLAY"
+label_settings = ExtResource("3_6q06x")
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="HighscoreLabel" type="Label" parent="MarginContainer"]
+layout_mode = 2
+size_flags_horizontal = 0
+size_flags_vertical = 8
+text = "HIGHSCORE"
+label_settings = ExtResource("4_ow5a4")
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="ScoreLabel" type="Label" parent="MarginContainer"]
+layout_mode = 2
+size_flags_horizontal = 8
+size_flags_vertical = 8
+text = "00000"
+label_settings = ExtResource("4_ow5a4")
+horizontal_alignment = 1
+vertical_alignment = 1
